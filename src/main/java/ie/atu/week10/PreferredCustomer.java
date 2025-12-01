@@ -7,7 +7,7 @@ public class PreferredCustomer extends Customer {
     public PreferredCustomer() {
         super();
         this.loyaltyPoints = 0;
-        this.discountLevel = 0;
+        this.discountLevel = 0.0;
     }
 
     public PreferredCustomer(String name, String address, String phoneNumber, int customerID, boolean mailingList, int loyaltyPoints) {
@@ -59,7 +59,7 @@ public class PreferredCustomer extends Customer {
 
     @Override
     public String toString() {
-        return super.toString() + ", loyaltyPoints = "+ loyaltyPoints +
-                ", discountLevel = " + discountLevel;
+        return super.toString() + ", Loyalty Points = "+ loyaltyPoints +
+                ", Discount Level = " + discountLevel;
     }
 }
